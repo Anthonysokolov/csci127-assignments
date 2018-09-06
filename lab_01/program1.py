@@ -51,6 +51,17 @@ def string_splosion(str):
   for num in range(1,len(str)+1):
     out += str[:num]
     
-  return out  
+  return out
+
+
+def array_front9(nums):
+  try:
+    for num in range(4):
+      if nums[num] == 9:
+        return True
+    return False
+  except IndexError:
+    return False
+
 
 
