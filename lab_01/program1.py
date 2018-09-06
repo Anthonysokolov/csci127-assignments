@@ -64,4 +64,15 @@ def array_front9(nums):
     return False
 
 
+def array123(nums):
+  find = [1,2,3]
+  x = 0
+  
+  for num in nums:
+    if num == find[x]:
+      x += 1
+      if x == 3:
+        return True
+  
+  return False
 
