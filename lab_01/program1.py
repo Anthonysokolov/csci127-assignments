@@ -46,3 +46,11 @@ def missing_char(str, n):
   return str[:n] + str[n+1:]
 
 
+def string_splosion(str):
+  out = ''
+  for num in range(1,len(str)+1):
+    out += str[:num]
+    
+  return out  
+
+
