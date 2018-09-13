@@ -3,4 +3,3 @@ def didit(name):
 
 
 print(didit('Steve'))
-print(didit('Someone'))
