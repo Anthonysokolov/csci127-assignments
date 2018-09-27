@@ -1,3 +1,5 @@
+# Jia Qi He & Anthony
+
 def collatz(n):
     print(n)
     count = 0
