@@ -15,4 +15,4 @@ def fizzBuzz(max_value):
         i+=1
     return int(max_value / 15)
 
-fizzBuzz(100)
+fizzBuzz(100
