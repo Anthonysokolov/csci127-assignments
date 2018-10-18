@@ -29,4 +29,5 @@ def madlib(s):
             out.append(w)
     return ' '.join(out)
 
+print(sentence)
 print(madlib(sentence))
