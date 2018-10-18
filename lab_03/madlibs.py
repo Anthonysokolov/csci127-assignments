@@ -10,13 +10,16 @@ nouns = ['computer','classroom','iPhone','iPad','Russian brother']
 foods = ['bananas','apples','sushi','pizza','pickles']
 numbers = ['4','3','28','7']
 
+
+fills  = ['<NAME>','<PLACE>','<VERB>','<NOUN>','<FOOD>','<NUMBER>']
+
 def madlib(s):
     out = []
     for w in s.split():
         if w == '<NAME>':
-            out.append(names[random.randint(0,len(names))])
-        if w == '<PLACE>':
-            out.append(places[random.randint(0,len(places))])
+            out.append(names[random.randint(0,len(names)-1)])
+        elif w == '<PLACE>':
+            out.append(places[random.randint(0,len(places)-1)])
         else:
             out.append(w)
     return ' '.join(out)
