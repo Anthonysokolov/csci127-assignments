@@ -6,6 +6,7 @@ import random
 sentence =  '''<NAME> goes to <PLACE> in order to <VERB> their <NOUN> and eat some <FOOD> at
                 <NUMBER> in the morning. Later <HERO> gets in a fight with <NAME> over the <FOOD>
                 which they spilled. <HERO> barely wins the fight, and goes to <PLACE> to <VERB> <PNOUN> afterwards'''
+
 # Options for filling in words
 names = ['John', 'Cena', 'Billy', 'Erica']
 places = ['hell', 'school','New York','subway','Chipotle','home','Argentina','The Matrix']
