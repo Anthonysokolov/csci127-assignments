@@ -15,7 +15,7 @@ def find_max(l):
     '''
     Finds the maximum value of a list
     '''
-    max = -99999999
+    max = l[0]
     for i in l:
         if i > max:
             max = i
