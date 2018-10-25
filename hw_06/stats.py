@@ -46,10 +46,29 @@ def freq(l, num):
             
     return count
 
+def max_mode(l):
+    '''
+    Finds the value with the highest mode in a list
+    '''
+    maxmode = 0
+    used = []
+    num = None
+    
+    for i in l:
+        if i not in used:
+            mode = freq(l,i)
+            if mode > maxmode:
+                maxmode = mode
+                num = i
+            used.append(i)
+            
+    return [num, maxmode]
+    
 
 l1 = rand_list(100,-10000,10000)
 l2 = rand_list(100, 1,50)
 
+
 print('Max value:', str(find_max(l1)), ', Index:', str(max_index(l1)))
 print('Max value:', str(find_max(l2)), ', Frequency:', str(freq(l2, find_max(l2))))
-
+print('Largest mode: Number =', str(max_mode(l2)[0]), ', Value =', str(max_mode(l2)[1]))
