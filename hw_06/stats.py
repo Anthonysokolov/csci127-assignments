@@ -35,21 +35,21 @@ def max_index(l):
         count += 1
 
 
-def max_freq(l):
+def freq(l, num):
     '''
-    Finds the frequency of the maximum value of a list
+    Finds the frequency of a value in a list
     '''
-    max = find_max(l)
     count = 0
     for i in l:
-        if i == max:
+        if i == num:
             count += 1
             
     return count
 
 
-l = rand_list(100,1,10)
+l1 = rand_list(100,-10000,10000)
+l2 = rand_list(100, 1,50)
 
-print('Max value:', str(find_max(l)), ', Index:', str(max_index(l)))
-print('Max value:', str(find_max(l)), ', Frequency:', str(max_freq(l)))
+print('Max value:', str(find_max(l1)), ', Index:', str(max_index(l1)))
+print('Max value:', str(find_max(l2)), ', Frequency:', str(freq(l2, find_max(l2))))
 
