@@ -1,4 +1,8 @@
 def happy_ladybugs(b):
+    '''
+    Returns 'YES' if all of the ladybugs can be made happy
+    Returns 'NO' otherwise
+    '''
     values = distinct_values(b)
     
     if '_' in values:
@@ -47,6 +51,9 @@ def is_full(b):
 
 
 def distinct_values(l):
+    '''
+    Returns a list of the distinct values in a string
+    '''
     distinct = []
     for c in l: 
         if c not in distinct:
