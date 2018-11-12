@@ -20,7 +20,7 @@ def next_word_dict(s):
     
     return out
 
-file="moby-small.txt"
+file="moby-medium.txt"
 f = open(file)
 s = clean_data(f.read())
 f.close()
