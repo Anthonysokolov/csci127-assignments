@@ -1,4 +1,5 @@
 # Kushendra Ramrup and Anthony Sokolov
+import random
 
 def clean_data(s):
     result=""
@@ -20,11 +21,22 @@ def next_word_dict(s):
     
     return out
 
-file="moby-medium.txt"
+
+def gen_text(words,num):
+    word = 'The'
+    text = []
+    for i in range(num):
+        text.append(word)
+        word = random.choice(words[word])
+        
+    return '_'.join(text)
+    
+
+file="moby.txt"
 f = open(file)
 s = clean_data(f.read())
 f.close()
 
 next_words = next_word_dict(s)
-print(next_words)
+print(gen_text(next_words,10))
         
