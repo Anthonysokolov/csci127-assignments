@@ -3,14 +3,23 @@ def encode(s):
     Encodes a string s using run length encoding by
     returning a list with each included letter and its count
     '''
-    count = {}
-    for l in s:
-        count.setdefault(l,0)
-        count[l] += 1
+    if len(s) == 0:
+        return []
     
+    count = 0
+    i = 0
     out = []
-    for k,v in count.items():
-        out.append([k,v])
+    prev = s[0]
+    
+    while i < len(s):
+        if s[i] == prev:
+            count += 1
+        else:
+            out.append([prev,count])
+            prev = s[i]
+            count = 1
+        i += 1
+    out.append([prev,count])
         
     return out
 
