@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <ctime>
 
 int main(){
   int x;
@@ -10,6 +11,8 @@ int main(){
   int res;
   int range;
   bool loop = 1;
+
+  srand(time(NULL));  
 
   std::cout << "Please enter a number between 0 and 99: ";
   std::cin >> x;
@@ -23,7 +26,6 @@ int main(){
       }
     else if(res == 1){
       low = guess + 1;
-
       }
     else if(res == -1){
       high = guess;
