@@ -12,7 +12,7 @@ print('1.1')
 print('*******************')
 for t in tests:
     print(t,':',countPlurals(t))
-print('1.2')
+print('\n1.2')
 print('*******************')
 for t in tests:
     print(t,':',notPossessive(t))
